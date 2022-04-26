@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <base href="/">
+        <iframe id="iframe" srcdoc="" style="border: 0; width: 100%; height: 100%">
+
+        </iframe>
+
+    </body>
+    <script>
+        function reqListener () {
+            document.getElementById('iframe').srcdoc = atob(this.responseText)
+        }
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", reqListener);
+        oReq.open("GET", "https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/docs/index.html.b64");
+        // oReq.open("GET", "https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/docs/index.html.b64");
+        oReq.send();
+
+        
+    </script>
+</html>
