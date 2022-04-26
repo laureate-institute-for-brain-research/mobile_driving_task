@@ -39,10 +39,12 @@ dependencies:
   iirjdart: ^0.0.1
   device_info_plus: ^2.1.0
   flutter_native_timezone: ^2.0.0
+  url_strategy: ^0.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

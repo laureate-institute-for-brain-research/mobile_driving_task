@@ -1,8 +1,13 @@
 import 'package:driving_task/instruction_page.dart';
 import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'url_args.dart';
 
-void main() => runApp(DrivingTask());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  setPathUrlStrategy();
+  runApp(DrivingTask());
+}
 
 Map<String, String> urlArgs = {};
 String subjectID = 'test123';

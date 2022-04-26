@@ -1,11 +1,1 @@
-{
-    "images/afterline.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/afterline.png"],
-    "images/beforeline.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/beforeline.png"],
-    "images/countdown_bg.jpg":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/countdown_bg.jpg"],
-    "images/drivingtaskbg.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/drivingtaskbg.png"],
-    "images/line.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/line.png"],
-    "images/practiceCar.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/practiceCar.png"],
-    "images/slider.jpg":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/slider.jpg"],
-    "images/stopsign.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/stopsign.png"],
-    "packages/cupertino_icons/assets/CupertinoIcons.ttf":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf"]
-}
+{"images/afterline.png":["images/afterline.png"],"images/beforeline.png":["images/beforeline.png"],"images/countdown_bg.jpg":["images/countdown_bg.jpg"],"images/drivingtaskbg.png":["images/drivingtaskbg.png"],"images/line.png":["images/line.png"],"images/practiceCar.png":["images/practiceCar.png"],"images/slider.jpg":["images/slider.jpg"],"images/stopsign.png":["images/stopsign.png"],"packages/cupertino_icons/assets/CupertinoIcons.ttf":["packages/cupertino_icons/assets/CupertinoIcons.ttf"]}
