@@ -17,3 +17,6 @@ flutter build web --profile --dart-define=Dart2jsOptimization=O0
 ```
 scp  -i ~/.ssh/restserver_key.pem  -r web $lnpirestuser:/var/www/html/driving
 ```
+
+## Test
+`$ flutter run --trace-startup --profile`
