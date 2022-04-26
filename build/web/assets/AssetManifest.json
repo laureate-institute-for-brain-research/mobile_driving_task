@@ -7,5 +7,5 @@
     "images/practiceCar.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/practiceCar.png"],
     "images/slider.jpg":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/slider.jpg"],
     "images/stopsign.png":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/images/stopsign.png"],
-    "packages/cupertino_icons/assets/CupertinoIcons.ttf":["packages/cupertino_icons/assets/CupertinoIcons.ttf"]
+    "packages/cupertino_icons/assets/CupertinoIcons.ttf":["https://raw.githubusercontent.com/laureate-institute-for-brain-research/mobile_driving_task/master/build/web/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf"]
 }
