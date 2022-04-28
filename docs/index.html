@@ -56,6 +56,9 @@
           iframe.src = `https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=lamp`
         }
         window.addEventListener("message", (event) => {
+            settings = event.data.activity.settings
+
+            console.log(document.location)
             console.log(event)
           }, false);
         // const parts = ['protocol', 'hostname', 'pathname', 'port', 'hash'];
