@@ -80,7 +80,6 @@
         function clickedBackButton(e){
 
           console.log('clicked back button')
-          e.preventDefault();
           if (window && window.parent) {
             window.parent.postMessage(null, '*');
           }
