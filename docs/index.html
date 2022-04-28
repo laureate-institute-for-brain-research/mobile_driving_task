@@ -43,7 +43,6 @@
         iframe.srcdoc = '<!DOCTYPE html><br><br><p style="color: green;">Loading...</p>';
         iframe.addEventListener('load', () => iframe.removeAttribute('srcdoc'));
         
-        var url = new URL(document.location);
         // Get subject ID
         console.log(document.location.href)
         const regexPattern = /(\/participant\/U\d*\/)/g;
@@ -52,8 +51,10 @@
           subjectid = matches[0].split('/')[2]
           // console.log('Subjectid: ',subjectid )
 
-          frameurl =`https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=${subjectid}`
+          
           iframe.src = frameurl
+        } else{
+          frameurl =`https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=lamp`
         }
         window.addEventListener("message", (event) => {
             console.log(event)
