@@ -45,39 +45,39 @@
         
         // Get subject ID
         console.log(document.location.href)
-        const regexPattern = /(\/participant\/U\d*\/)/g;
-        const matches = document.location.href.match(regexPattern)
+
+        function getSubjectFromURL(url){
+          const regexPattern = /(\/participant\/U\d*\/)/g;
+          const matches = url.match(regexPattern)
+          if (matches && matches.length >= 1){
+            subjectid = matches[0].split('/')[2]
+            return(subjectid)
+          }
+        }
+        
         if (matches && matches.length >= 1){
           subjectid = matches[0].split('/')[2]
           // console.log('Subjectid: ',subjectid )
-          frameurl =`https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=${subjectid}`
+          
           iframe.src = frameurl
         } else{
-          iframe.src = `https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=lamp`
+          
         }
-        function getParentOrigin() {
-          const locationAreDisctint = (window.location !== window.parent.location);
-          const parentOrigin = ((locationAreDisctint ? document.referrer : document.location) || "").toString();
 
-          if (parentOrigin) {
-            return new URL(parentOrigin).origin;
-          }
-
-          const currentLocation = document.location;
-
-          if (currentLocation.ancestorOrigins && currentLocation.ancestorOrigins.length) {
-            return currentLocation.ancestorOrigins[0];
-          }
-
-          return "";
-        }
-        // console.log(getParentOrigin())
+        iframe.src = `https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=lamp`
+        
         window.addEventListener("message", (event) => {
+            console.log(event)
             settings = event.data.activity.settings
 
-            console.log(document.location)
-            console.log(getParentOrigin())
-            console.log(event)
+            baseUri = event.path[0].document.baseUri
+            subjectid = getSubjectFromURL(baseUri)
+            
+            console.log(subjectid)
+            
+            frameurl =`https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=${subjectid}`
+            iframe.src = frameurl
+            
           }, false);
         // const parts = ['protocol', 'hostname', 'pathname', 'port', 'hash'];
         // parts.forEach(key => console.log(key, url[key]))
