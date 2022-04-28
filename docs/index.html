@@ -79,9 +79,9 @@
 
         function clickedBackButton(){
           console.log('clicked back button')
-          if (window && window.parent) {
-            window.parent.postMessage(null, '*');
-          }
+
+          parent.postMessage(null, '*');
+          
         }
         // const parts = ['protocol', 'hostname', 'pathname', 'port', 'hash'];
         // parts.forEach(key => console.log(key, url[key]))
