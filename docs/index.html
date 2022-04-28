@@ -54,16 +54,6 @@
             return(subjectid)
           }
         }
-        
-        if (matches && matches.length >= 1){
-          subjectid = matches[0].split('/')[2]
-          // console.log('Subjectid: ',subjectid )
-          
-          iframe.src = frameurl
-        } else{
-          
-        }
-
         iframe.src = `https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=lamp`
         
         window.addEventListener("message", (event) => {
@@ -77,7 +67,7 @@
             
             frameurl =`https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=${subjectid}`
             iframe.src = frameurl
-            
+
           }, false);
         // const parts = ['protocol', 'hostname', 'pathname', 'port', 'hash'];
         // parts.forEach(key => console.log(key, url[key]))
