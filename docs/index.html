@@ -63,7 +63,7 @@
         //iframe.src = `https://tasks.laureateinstitute.org/js/tasks/driving/#/?totalTrials=20&maxTime=.75&session=1&id=lamp`
         
         window.addEventListener("message", (event) => {
-            console.log(event)
+            // console.log(event)
             settings = event.data.activity.settings
 
             baseUri = event.source.location.href
@@ -77,8 +77,7 @@
           }, false);
 
 
-        function clickedBackButton(e){
-
+        function clickedBackButton(){
           console.log('clicked back button')
           if (window && window.parent) {
             window.parent.postMessage(null, '*');
